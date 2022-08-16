@@ -28,6 +28,8 @@ resource "yandex_compute_instance" "vp_netology_vm" {
   }
 }
 
+resource "null_resource" "demo_null" {}
+
 resource "yandex_vpc_network" "network-1" {
   name = "network1"
 }
